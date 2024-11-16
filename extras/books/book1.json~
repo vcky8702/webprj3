@@ -1,0 +1,13 @@
+[
+  {
+    "title": "JavaScript: The Definitive Guide, 7th Edition",
+    "authors": [
+      "David SomeAuthor"
+    ],
+    "isbn": "149-195-202-4",
+    "pages": 704,
+    "year": 2020,
+    "publisher": "O'Reilly",
+    "nCopies": 2
+  }
+]

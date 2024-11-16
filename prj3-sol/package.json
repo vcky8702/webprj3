@@ -1,0 +1,39 @@
+{
+  "devDependencies": {
+    "@types/chai": "^5.0.1",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "^22.9.0",
+    "@types/semver": "^7.5.8",
+    "@types/supertest": "^6.0.2",
+    "chai": "^5.1.2",
+    "mocha": "^10.8.2",
+    "mongodb-memory-server": "^10.1.2",
+    "shx": "^0.3.4",
+    "supertest": "^7.0.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "cs544-js-utils": "file:cs544-js-utils.tgz",
+    "cs544-node-utils": "file:cs544-node-utils.tgz",
+    "express": "^4.21.1",
+    "http-status": "^1.8.1",
+    "lending-library": "file:lending-library-0.1.1.tgz",
+    "mongodb": "^6.10.0",
+    "zod": "^3.23.8"
+  },
+  "scripts": {
+    "clean": "shx rm -rf dist",
+    "build": "tsc",
+    "postbuild": "shx chmod a+x dist/index.js",
+    "watch": "tsc --watch",
+    "pretest": "npm run build",
+    "test": "mocha --reporter-options maxDiffSize=128000 dist/test",
+    "predebug-test": "npm run build",
+    "debug-test": "mocha --inspect-brk dist/test"
+    },
+    "type": "module"
+}
